@@ -20,4 +20,3 @@ request(url, (error, response, body) => {
     console.log(`The content has been saved to ${filePath}`);
   });
 });
-

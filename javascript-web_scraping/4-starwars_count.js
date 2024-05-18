@@ -20,4 +20,3 @@ request.get(apiUrl, (error, response, body) => {
   }, 0);
   console.log(count);
 });
-
