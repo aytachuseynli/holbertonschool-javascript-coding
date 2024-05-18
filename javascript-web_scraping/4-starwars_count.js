@@ -11,6 +11,7 @@ request.get(apiUrl, (error, response, body) => {
     return;
   }
   const films = JSON.parse(body).results;
+  console.log('Films:', films); // Debug statement
   const count = films.reduce((total, film) => {
     const characters = film.characters;
     if (characters.includes(`https://swapi-api.hbtn.io/api/people/${characterId}/`)) {
@@ -18,5 +19,6 @@ request.get(apiUrl, (error, response, body) => {
     }
     return total;
   }, 0);
+  console.log('Count:', count); // Debug statement
   console.log(count);
 });
