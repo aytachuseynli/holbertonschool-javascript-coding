@@ -11,4 +11,3 @@ fs.writeFile(filePath, content, 'utf-8', (err) => {
     process.exit(1);
   }
 });
-
